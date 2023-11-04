@@ -2,13 +2,6 @@
     filter: brightness(32%);
 }
 
-.card-img-overlay {
-    padding-right: 8.5rem !important;
-    padding-top: 20% !important;
-    padding-left: 48% !important;
-    height: max-content;
-}
-
 .card-title1, .card-text1, .btn-outline {
     color: white;
 }
@@ -44,12 +37,6 @@
 .container-oradores {
     margin-top: 18px;
     padding: 1rem 8rem;
-}
-
-.card:hover{
-    transform: scale(1.01);
-    background-color: rgb(221, 218, 218);
-    cursor: pointer;
 }
 
 .card-text {
@@ -122,7 +109,12 @@ footer {
     justify-content: space-between !important;
 }
 
-
+/* venta de boleto */
+.btn {
+    /*redefino el color que viene por defecto */
+    background-color: #95c842 !important;
+    border-color: #95c842 !important;
+  }        
 
 /* Responsive */
 

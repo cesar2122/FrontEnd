@@ -23,22 +23,26 @@ function compra() {
     if (cant <= 0) {
       alert('Por favor, coloque una cantidad mayor a cero(0)');    
     } else {
+      descuento='0%';
       switch (tipo) {
         case 'Estudiante':
           valor=.20;
+          descuento='20%';
           break;
         case 'Trainee':
           valor=.50;
+          descuento='50%';
           break;
         case 'Junior':
           valor=.75;
+          descuento='75%';
           break;
           default:
             valor=1;
           break;
       }
       total=(valor*200)*cant;
-      document.getElementById('total').innerHTML ='Gracias por su compra, Total a pagar $: '+total;
+      document.getElementById('total').innerHTML ='Tickets '+cant+', Descuento: '+descuento+', monto a pagar $: '+total;
       alert('Gracias por su compra, Total a pagar $: '+total);
     }
   }  
